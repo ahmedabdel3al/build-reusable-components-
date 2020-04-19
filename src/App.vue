@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <toggle-input v-model="checked" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ToggleInput from "./components/ToggleInput";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    ToggleInput
+  },
+  data() {
+    return {
+      checked: false
+    };
   }
 };
 </script>
