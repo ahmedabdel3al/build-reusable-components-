@@ -14,6 +14,7 @@ export default {
   },
   methods: {
     changeToggleStatus() {
+      //fire input event with value
       this.$emit("input", !this.value);
     }
   }
